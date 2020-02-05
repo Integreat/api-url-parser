@@ -30,7 +30,7 @@ $('#language').on('change', function() {
         try { 
           var a = decodeURI(page.url); 
         } catch(e) {
-          output = output.concat("Found error:");
+          output = output.concat(" ");
           output = output.concat(e); 
         }
         output = output.concat("</p>")
