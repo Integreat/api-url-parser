@@ -26,7 +26,7 @@ $('#language').on('change', function() {
     $.getJSON( base_url + $("#location").val() + this.value +"/wp-json/extensions/v3/pages", function( data ) {
       var output = "";
       $.each( data, function( key, page ) {
-        output = output.concat("<p>Checking " + page.url);
+        output = output.concat("<p>Checking " + page.id + ": "+ page.url);
         try { 
           var a = decodeURI(page.url); 
         } catch(e) {
